@@ -51,10 +51,13 @@ export default {
 
   // DevCommands
   devTitle: '🧪 Starting Setup via DevCommands',
+  devHowTo: '🔧 <strong>How to enable console:</strong> Press <code>F5</code> in-game, then type <code>devcommands</code> and press Enter. The console is now active — enter the commands below.',
+  devLoreIntro: '🐦 <em>Huginn delivers Odin\'s gifts. Each command is a package from the Allfather via his raven.</em>',
   devDesc: "She's a veteran mage. Boost skills and spawn staves via console:",
   devSkillsLabel: 'Skill boost:',
   devLootLabel: 'Starting gear:',
   devNote: '⚠️ Eitr food is FINITE until Mistlands. Every fireball counts!',
+  devBossRewardIntro: '🐦 <strong>Boss rewards:</strong> after killing a boss, open the console (<code>F5</code>) and enter the commands from the rewards section. Huginn delivers Odin\'s gifts!',
 
   // Starter Kit
   kitTitle: "📦 Starter Kit — Odin's Gifts",
@@ -158,36 +161,42 @@ export default {
       quote: "The stag burned in the staff's flame. Odin is impressed.",
       loot: [['Yggdrasil porridge', '10'], ['Troll hides', '30'], ['Surtling cores', '15'], ['Fine wood', '50']],
       bonus: '<strong>3 portals</strong> — the völva knows the secrets of space',
+      cmds: 'spawn YggdrasilPorridge 10\nspawn TrollHide 30\nspawn SurtlingCore 15\nspawn FineWood 50',
     },
     {
       icon: '🌳', name: 'The Elder', sub: 'Boss #2',
       quote: 'The ancient spirit crumbled to ash. The swamps reveal their secrets.',
       loot: [['Magically stuffed shroom', '15'], ['Iron ingots', '30'], ['Chitin', '30']],
       bonus: '<strong>Abyssal razor</strong> (lvl 3) — a blade from the depths of the abyss',
+      cmds: 'spawn MagicallyStuffedShroom 15\nspawn Iron 30\nspawn Chitin 30\nspawn KnifeChitin 1',
     },
     {
       icon: '💧', name: 'Bonemass', sub: 'Boss #3',
       quote: 'The rot was frozen by the frost staff. The mountains await.',
       loot: [['Seeker aspic', '10'], ['Silver ingots', '50'], ['Wolf pelts', '20'], ['Root armor set (full)', '1']],
       bonus: "<strong>Root armor</strong> — the völva's first magical armor",
+      cmds: 'spawn SeekerAspic 10\nspawn Silver 50\nspawn WolfPelt 20\nspawn ArmorRootChest 1\nspawn ArmorRootLegs 1\nspawn HelmetRoot 1',
     },
     {
       icon: '🐉', name: 'Moder', sub: 'Boss #4',
       quote: 'The dragon fell under a hail of ice shards.',
       loot: [['Black metal ingots', '60'], ['Linen thread', '60'], ['Barley flour', '40'], ['Fenris hair', '20'], ['Wolf pelts', '15']],
       bonus: '<strong>Fenris armor set</strong> (full, lvl 1) — the dark mage\'s armor + <strong>metal teleportation</strong> + 2 more portals (5 total)',
+      cmds: 'spawn BlackMetal 60\nspawn LinenThread 60\nspawn BarleyFlour 40\nspawn FenrisHair 20\nspawn WolfPelt 15\nspawn ArmorFenrisChest 1\nspawn ArmorFenrisLegs 1\nspawn HelmetFenris 1',
     },
     {
       icon: '👑', name: 'Yagluth — THE GREAT RESTORATION', sub: 'Boss #5',
       quote: "The fifth Forsaken has fallen. Odin restores the völva's full power.",
       loot: [['Refined eitr', '30'], ['Sap', '30'], ['Black cores', '10'], ['Soft tissue', '20'], ['Royal jelly', '15']],
       bonus: '<strong>Unlimited portals</strong> + eitr food crafting = infinite mana. The path to Mistlands is open!',
+      cmds: 'spawn RefinedEitr 30\nspawn Sap 30\nspawn BlackCore 10\nspawn SoftTissue 20\nspawn RoyalJelly 15',
     },
     {
       icon: '👸', name: 'The Queen', sub: 'Boss #6',
       quote: 'The Queen has fallen. The mists of Mistlands have cleared. Ash lies ahead.',
       loot: [['Flametal ore', '30'], ['Ashwood', '40'], ['Morgen sinew', '20'], ['Asksvin hide', '10']],
       bonus: 'The path to Ashlands is open — the flame of Muspelheim awaits',
+      cmds: 'spawn FlametalOre 30\nspawn Ashwood 40\nspawn MorgenSinew 20\nspawn AsksvinHide 10',
     },
     {
       icon: '🌋', name: 'Fader — LORD OF ASH', sub: 'Boss #7',
@@ -246,6 +255,26 @@ export default {
   loreFateResNote: "💀 <strong>If all loops are spent</strong> — the Thread of Fate snaps. Sigrid's soul passes into Helheim forever. Odin loses his völva. Valheim remains unconquered. <strong>Stream over — Game Over.</strong>",
   loreFateResQuote: '"Huginn sees everything. Every death, every resurrection. He does not pity Sigrid — he counts. Odin counts with him. When the loops run out, the raven will simply fly away. And darkness will swallow the völva forever."',
   loreFateResQuoteAttr: "— Muninn, Odin's second raven",
+
+  // Challenge Modes
+  challengeTitle: '🎮 How to Take the Challenge',
+  challengeModes: [
+    {
+      icon: '🎲',
+      name: 'Solo / For Fun',
+      desc: "Play the challenge at your own pace, no stream, no pressure. Just enjoy the magic of Valheim. No proof needed — you're playing for fun.",
+    },
+    {
+      icon: '📺',
+      name: 'On Stream — Verified Challenge',
+      desc: 'Complete the challenge on stream from start to finish. The VOD is your proof. If all bosses are slain and the rules are followed — you earn a spot in the <strong>Hall of Fame</strong>.',
+    },
+  ],
+  hallOfFameNote: '🏛️ <strong>Hall of Fame</strong> — the list of those who completed the challenge on stream. Send your VOD link to <a href="https://t.me/eitrway" target="_blank" rel="noopener noreferrer">Telegram</a> for verification.',
+
+  // Share
+  shareTitle: '📤 Share This Challenge',
+  shareCopied: 'Link copied!',
 
   // Closing
   closing: 'Eitr flows through my veins. Flame rests in my hands. Valheim is my proving ground. 🔮',

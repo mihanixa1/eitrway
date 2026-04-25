@@ -148,6 +148,8 @@ ${t.hymnAudioFallback}
     // DevCommands
     html += `<div class="dev">
 <h3>${t.devTitle}</h3>
+<div class="nt">${t.devHowTo}</div>
+<p>${t.devLoreIntro}</p>
 <p>${t.devDesc}</p>
 <div class="lbl">${t.devSkillsLabel}</div>
 <div class="cmd">raiseskill ElementalMagic 50\nraiseskill BloodMagic 50\nraiseskill Run 40\nraiseskill Sneak 30\nraiseskill Knives 30\nraiseskill Dodge 30</div>
@@ -172,10 +174,12 @@ ${t.hymnAudioFallback}
 
     // Boss Rewards
     html += `<div class="section"><h3 class="st">${t.bossTitle}</h3>`;
+    html += `<div class="nt">${t.devBossRewardIntro}</div>`;
     t.bosses.forEach(boss => {
         let c = `<div class="bq">"${boss.quote}"</div>`;
         if (boss.loot.length) c += tbl([t.bossRewardHeader, t.bossQtyHeader], boss.loot);
         c += `<div class="bn"><strong>${t.bossBonusLabel}</strong> ${boss.bonus}</div>`;
+        if (boss.cmds) c += `<div class="lbl">🐦 Console commands:</div><div class="cmd">${boss.cmds}</div>`;
         html += acc(boss.icon, boss.name, boss.sub, c, false);
     });
     html += `</div>`;
@@ -236,6 +240,40 @@ ${t.loreFateResSteps.map((step, i) => `<div class="lore-step"><span class="lore-
 </div>
 </div>
 
+</div>`;
+
+    // ===== CHALLENGE MODES =====
+    html += `<div class="challenge-modes">
+<h3 class="st">${t.challengeTitle}</h3>
+<div class="cm-grid">
+${t.challengeModes.map(m => `<div class="cm-card">
+<div class="cm-icon">${m.icon}</div>
+<div class="cm-name">${m.name}</div>
+<div class="cm-desc">${m.desc}</div>
+</div>`).join('')}
+</div>
+<div class="nt">${t.hallOfFameNote}</div>
+</div>`;
+
+    // ===== SHARE BUTTONS =====
+    const shareUrl = 'https://eitrway.com';
+    const shareText = encodeURIComponent(t.meta.title);
+    html += `<div class="share-section">
+<h3 class="st">${t.shareTitle}</h3>
+<div class="share-btns">
+<a class="share-btn share-tg" href="https://t.me/share/url?url=${encodeURIComponent(shareUrl)}&text=${shareText}" target="_blank" rel="noopener noreferrer">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+Telegram
+</a>
+<a class="share-btn share-tw" href="https://twitter.com/intent/tweet?url=${encodeURIComponent(shareUrl)}&text=${shareText}" target="_blank" rel="noopener noreferrer">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+X
+</a>
+<button class="share-btn share-copy" onclick="navigator.clipboard.writeText('${shareUrl}').then(()=>{this.querySelector('.share-copy-text').textContent='${t.shareCopied}';setTimeout(()=>{this.querySelector('.share-copy-text').textContent='Copy link'},2000)})">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+<span class="share-copy-text">Copy link</span>
+</button>
+</div>
 </div>`;
 
     // Closing

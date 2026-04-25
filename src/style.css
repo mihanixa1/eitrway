@@ -112,6 +112,34 @@ td{padding:5px 8px;font-size:.82rem;border-bottom:1px solid #ffffff08}
 .lore-quote-text em{color:var(--dim)}
 .lore-quote-attr{display:block;margin-top:6px;font-size:.74rem;color:var(--gold);font-style:normal;font-weight:600}
 
+/* Challenge Modes */
+.challenge-modes{background:var(--card);border:1px solid var(--brd);border-radius:14px;padding:20px;margin-bottom:24px}
+.cm-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px}
+@media(max-width:600px){.cm-grid{grid-template-columns:1fr}}
+.cm-card{background:linear-gradient(135deg,#0a0a1a,#141428);border:1px solid var(--brd);border-radius:12px;padding:18px;transition:border-color .2s}
+.cm-card:hover{border-color:var(--pur)}
+.cm-icon{font-size:2rem;margin-bottom:8px}
+.cm-name{font-family:'Yeseva One',cursive;font-size:1rem;color:var(--gold);margin-bottom:6px}
+.cm-desc{font-size:.82rem;color:var(--dim);line-height:1.7}
+.cm-desc strong{color:var(--gold)}
+.cm-desc a{color:var(--pur);text-decoration:none}
+.cm-desc a:hover{text-decoration:underline}
+
+/* Share Buttons */
+.share-section{background:var(--card);border:1px solid var(--brd);border-radius:14px;padding:20px;margin-bottom:24px}
+.share-btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
+.share-btn{display:inline-flex;align-items:center;gap:8px;padding:10px 18px;border-radius:10px;font-family:'Inter',sans-serif;font-size:.82rem;font-weight:600;text-decoration:none;cursor:pointer;transition:all .2s;border:1px solid transparent}
+.share-tg{background:#0088cc22;color:#29b6f6;border-color:#0088cc44}
+.share-tg:hover{background:#0088cc;color:#fff;box-shadow:0 0 14px #0088cc44}
+.share-tw{background:#1d9bf022;color:#1d9bf0;border-color:#1d9bf044}
+.share-tw:hover{background:#1d9bf0;color:#fff;box-shadow:0 0 14px #1d9bf044}
+.share-copy{background:#ffffff08;color:var(--dim);border-color:var(--brd)}
+.share-copy:hover{background:var(--pur);color:#fff;border-color:var(--pur);box-shadow:0 0 14px #6644ff44}
+@media(max-width:600px){.share-btns{flex-direction:column}.share-btn{justify-content:center}}
+
+/* Inline code */
+code{background:#ffffff12;color:#bb99ff;padding:2px 6px;border-radius:4px;font-family:'Fira Code','Consolas',monospace;font-size:.85em}
+
 /* Language Switcher */
 .lang-switcher{position:fixed;top:16px;right:16px;z-index:100;display:flex;gap:4px;background:#0a0a1acc;backdrop-filter:blur(8px);border:1px solid var(--brd);border-radius:8px;padding:4px}
 .lang-btn{background:transparent;border:1px solid transparent;color:var(--dim);font-family:'Inter',sans-serif;font-size:.78rem;font-weight:600;padding:4px 10px;border-radius:6px;cursor:pointer;transition:all .2s;letter-spacing:.5px}

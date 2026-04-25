@@ -51,10 +51,13 @@ export default {
 
   // DevCommands
   devTitle: '🧪 Стартовая настройка через DevCommands',
+  devHowTo: '🔧 <strong>Как включить консоль:</strong> Нажми <code>F5</code> в игре, затем введи <code>devcommands</code> и нажми Enter. Теперь консоль активна — вводи команды ниже.',
+  devLoreIntro: '🐦 <em>Хугин приносит дары Одина. Каждая команда — посылка от Всеотца через ворона.</em>',
   devDesc: 'Маг — опытный. Прокачиваем навыки и выдаём посохи через консоль:',
   devSkillsLabel: 'Прокачка навыков:',
   devLootLabel: 'Стартовый лут:',
   devNote: '⚠️ Эйтр-еда КОНЕЧНА до Мистландс. Каждый файербол на счету!',
+  devBossRewardIntro: '🐦 <strong>Награды за боссов:</strong> после убийства босса открой консоль (<code>F5</code>) и введи команды из раздела награды. Хугин доставляет дары Одина!',
 
   // Starter Kit
   kitTitle: '📦 Стартовый набор — Дары Одина',
@@ -158,36 +161,42 @@ export default {
       quote: 'Олень сгорел в пламени посоха. Один впечатлён.',
       loot: [['Yggdrasil porridge', '10'], ['Troll hides', '30'], ['Surtling cores', '15'], ['Fine wood', '50']],
       bonus: '<strong>3 портала</strong> — вёльва знает тайны пространства',
+      cmds: 'spawn YggdrasilPorridge 10\nspawn TrollHide 30\nspawn SurtlingCore 15\nspawn FineWood 50',
     },
     {
       icon: '🌳', name: 'Древний', sub: '2-й босс',
       quote: 'Древний дух рассыпался в пепел. Болота открывают тайны.',
       loot: [['Magically stuffed shroom', '15'], ['Iron ingots', '30'], ['Chitin', '30']],
       bonus: '<strong>Abyssal razor</strong> (3 ур.) — Бритва Бездны, клинок из глубин',
+      cmds: 'spawn MagicallyStuffedShroom 15\nspawn Iron 30\nspawn Chitin 30\nspawn KnifeChitin 1',
     },
     {
       icon: '💧', name: 'Масса', sub: '3-й босс',
       quote: 'Гниль заморожена посохом мороза. Горы ждут.',
       loot: [['Seeker aspic', '10'], ['Silver ingots', '50'], ['Wolf pelts', '20'], ['Root armor set (полный)', '1']],
       bonus: '<strong>Root armor</strong> — первая магическая броня вёльвы',
+      cmds: 'spawn SeekerAspic 10\nspawn Silver 50\nspawn WolfPelt 20\nspawn ArmorRootChest 1\nspawn ArmorRootLegs 1\nspawn HelmetRoot 1',
     },
     {
       icon: '🐉', name: 'Моудер', sub: '4-й босс',
       quote: 'Дракон рухнул под градом ледяных осколков.',
       loot: [['Black metal ingots', '60'], ['Linen thread', '60'], ['Barley flour', '40'], ['Fenris hair', '20'], ['Wolf pelts', '15']],
       bonus: '<strong>Fenris armor set</strong> (полный, 1 ур.) — броня тёмного мага + <strong>телепортация металлов</strong> + ещё 2 портала (итого 5)',
+      cmds: 'spawn BlackMetal 60\nspawn LinenThread 60\nspawn BarleyFlour 40\nspawn FenrisHair 20\nspawn WolfPelt 15\nspawn ArmorFenrisChest 1\nspawn ArmorFenrisLegs 1\nspawn HelmetFenris 1',
     },
     {
       icon: '👑', name: 'Яглут — ВЕЛИКОЕ ВОСПОЛНЕНИЕ', sub: '5-й босс',
       quote: 'Пятый Отверженный пал. Один возвращает вёльве полную силу.',
       loot: [['Refined eitr', '30'], ['Sap', '30'], ['Black cores', '10'], ['Soft tissue', '20'], ['Royal jelly', '15']],
       bonus: '<strong>Неограниченные порталы</strong> + крафт эйтр-еды = бесконечная мана. Путь в Мистландс открыт!',
+      cmds: 'spawn RefinedEitr 30\nspawn Sap 30\nspawn BlackCore 10\nspawn SoftTissue 20\nspawn RoyalJelly 15',
     },
     {
       icon: '👸', name: 'Королева', sub: '6-й босс',
       quote: 'Королева пала. Туманы Мистландс рассеялись. Впереди — пепел.',
       loot: [['Flametal ore', '30'], ['Ashwood', '40'], ['Morgen sinew', '20'], ['Asksvin hide', '10']],
       bonus: 'Путь в Эшландс открыт — пламя Муспельхейма ждёт',
+      cmds: 'spawn FlametalOre 30\nspawn Ashwood 40\nspawn MorgenSinew 20\nspawn AsksvinHide 10',
     },
     {
       icon: '🌋', name: 'Фадер — ПОВЕЛИТЕЛЬ ПЕПЛА', sub: '7-й босс',
@@ -246,6 +255,26 @@ export default {
   loreFateResNote: '💀 <strong>Если все петли израсходованы</strong> — Нить Судьбы обрывается. Душа Сигрид уходит в Хельхейм навсегда. Один теряет свою вёльву. Вальхейм остаётся непокорённым. <strong>Стрим окончен — Game Over.</strong>',
   loreFateResQuote: '«Хугин видит всё. Каждую смерть, каждое воскрешение. Он не жалеет Сигрид — он считает. Один считает вместе с ним. Когда петли закончатся, ворон просто улетит. И тьма поглотит вёльву навсегда.»',
   loreFateResQuoteAttr: '— Мунин, второй ворон Одина',
+
+  // Challenge Modes
+  challengeTitle: '🎮 Как пройти челлендж',
+  challengeModes: [
+    {
+      icon: '🎲',
+      name: 'Для себя',
+      desc: 'Проходи челлендж в своём темпе, без стрима и без давления. Просто наслаждайся магией Вальхейма. Никаких доказательств не нужно — ты играешь для фана.',
+    },
+    {
+      icon: '📺',
+      name: 'На стриме — подтверждённый челлендж',
+      desc: 'Пройди челлендж на стриме от начала до конца. Запись стрима = доказательство. Если все боссы повержены и правила соблюдены — ты попадаешь в <strong>Зал Славы</strong>.',
+    },
+  ],
+  hallOfFameNote: '🏛️ <strong>Зал Славы</strong> — список тех, кто прошёл челлендж на стриме. Отправь ссылку на VOD в <a href="https://t.me/eitrway" target="_blank" rel="noopener noreferrer">Telegram</a> для проверки.',
+
+  // Share
+  shareTitle: '📤 Поделиться челленджем',
+  shareCopied: 'Ссылка скопирована!',
 
   // Closing
   closing: 'Эйтр течёт в моих венах. Пламя — в моих руках. Вальхейм — мой полигон. 🔮',
