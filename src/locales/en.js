@@ -13,7 +13,7 @@ export default {
 
   // Hero & Footer
   heroTitle: "Odin's Mage Sigrid — Valheim",
-  footer: 'Valheim Mage Challenge 🔮',
+  footer: 'Valheim Mage Challenge 🔮 <a href="https://t.me/eitrway" target="_blank" rel="noopener noreferrer" class="tg-link">✈ Telegram</a>',
 
   // Character header
   charName: 'Sigrid Ash-Eyed',

@@ -13,7 +13,7 @@ export default {
 
   // Hero & Footer
   heroTitle: 'Маг Одина Сигрид — Valheim',
-  footer: 'Челлендж мага в Вальхейм 🔮',
+  footer: 'Челлендж мага в Вальхейм 🔮 <a href="https://t.me/eitrway" target="_blank" rel="noopener noreferrer" class="tg-link">✈ Telegram</a>',
 
   // Character header
   charName: 'Сигрид Пеплоглазая',
