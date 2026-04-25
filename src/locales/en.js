@@ -208,6 +208,7 @@ export default {
 
   // Deep Lore
   loreTitle: '📜 The Deep Lore of Sigrid Ash-Eyed',
+  loreToggleHint: 'click to reveal',
 
   loreThorTitle: 'Sigrid & Thor: The Battle at the Gates of Helheim',
   loreThorIcon: '⚡',
@@ -217,6 +218,27 @@ export default {
   loreThorP4: 'On the third day, Sigrid did what even Thor could not: she pushed through the ranks of the dead, using the frost staff to freeze them in place, reached the Gates themselves, and <strong>sealed them with the rune Isa</strong>, woven into a stream of pure eitr. The Gates slammed shut. The army of the dead crumbled to dust.',
   loreThorP5: 'Thor, not one to thank mortals, silently placed his hand on her shoulder. It meant more than any words the Thunderer could speak. From that day on, he called her <strong>"Ash-Eyed"</strong> — because after three days of unbroken spellcasting, her eyes had turned grey as ash and never regained their color. The name became her title — a mark of what she sacrificed for victory.',
   loreThorNote: '⚡ It was after the Battle at the Gates of Helheim that Odin realized magic could prevail where steel could not — and he remembered. When the Forsaken of Valheim began to grow in power, he knew exactly who to send.',
+
+  loreManaTitle: "The Fading of Asgard: Why Mana Is Finite",
+  loreManaIcon: '🔥',
+  loreManaP1: "The eitr Odin gave Sigrid is not local. It is <strong>eitr of Asgard</strong>, drawn from the World Tree's currents near the throne of Hlidskjalf itself. The purest magical substance, capable of fueling staves for weeks. But it has a fatal flaw: it does not replenish outside Asgard.",
+  loreManaP2: 'Valheim is the tenth world, <strong>severed from the currents of Yggdrasil</strong>. When the gods banished the Forsaken here, they deliberately cut this world\'s connection to the Tree so the prisoners could not draw power from its roots. The side effect: any eitr brought from outside slowly dissipates, like warmth in an ice cave. Every fireball, every ice shard — is a fragment of Asgard that burns away forever.',
+  loreManaP3: '<em>"I have given you thirty portions of Yggdrasil porridge and thirty shrooms soaked in eitr," Odin said before the exile. "That will be enough to overcome the first enemies. But do not squander them: when the supply runs dry, you will be left with a knife and your wits. Valheim will not give you mana — until you find a place where the Tree\'s roots still live."</em>',
+
+  loreManaPhaseTitle: '📉 Three Phases of the Völva\'s Power',
+  loreManaPhases: [
+    ['🟢 Full Power (Meadows → Swamps)', "The Asgardian eitr food supply is still plentiful. Sigrid hurls fireballs freely, freezes enemies without a second thought. She feels just as she did in Asgard — powerful and untouchable. But the supply dwindles."],
+    ['🟡 The Fading (Mountains → Plains)', 'Eitr food is running out. Every fireball is a conscious choice: "is this enemy worth the last portion of mana?" Sigrid reaches for the knife more and more. The staff falls silent — not because it\'s broken, but because there\'s nothing to feed it. A völva accustomed to commanding the elements learns to hide and backstab.'],
+    ['🔴 Crisis (Yagluth)', "Mana is nearly zero. Sigrid is a mage without magic. The blackmetal knife becomes her primary weapon. The staff is a luxury reserved for bosses and life-or-death moments. This is the völva's darkest hour: strong in knowledge, but powerless without eitr. This is where those who relied solely on magic break."],
+  ],
+
+  loreManaRebirthTitle: '🌿 Mistlands: The Roots That Survived',
+  loreManaRebirthP1: "When the gods severed Valheim from Yggdrasil, they failed to account for one thing: <strong>the roots of the World Tree cannot be fully destroyed</strong>. Deep beneath the mists of Mistlands, in crevices where no light reaches, the most ancient roots of Yggdrasil continued to live — thin, nearly dead, but still carrying a drop of eitr.",
+  loreManaRebirthP2: "The Seekers — creatures of Mistlands — had fed on this eitr for millennia, transforming it into sap and royal jelly. They never knew they were drinking the World Tree's blood. When Sigrid reaches Mistlands and brews <strong>Yggdrasil porridge from local ingredients</strong> for the first time, she closes the circle: Valheim's own eitr flows through her veins, and the staves come alive once more.",
+  loreManaRebirthP3: 'This is not simply "mana is back." This is a <strong>rebirth</strong>. In Asgard, Sigrid was a mage fed by the gifts of gods. In Mistlands, she becomes a mage who has <strong>found her own source of power</strong>. She no longer depends on Odin. And the Allfather knows it.',
+  loreManaNote: "🔥 The mana crisis is not a punishment. It is a trial. Odin deliberately gave Sigrid a limited supply to test her: can the völva survive without magic? Can she find eitr where there seemingly is none? Those who endure the crisis and reach Mistlands prove to Odin the one thing that matters — they are worthy of infinite power.",
+  loreManaQuote: '"When the last shroom was eaten and the staff fell silent, I felt fear for the first time in centuries. Not fear of enemies — fear of silence. A mage without mana is a bird without wings. But a bird that has learned to walk will never crash."',
+  loreManaQuoteAttr: '— Sigrid Ash-Eyed, inscriptions on the resurrection stone',
 
   loreFateTitle: "Odin's Gift: +1 Life per Victory",
   loreFateIcon: '💀',

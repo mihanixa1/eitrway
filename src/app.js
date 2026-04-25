@@ -163,15 +163,6 @@ ${t.hymnAudioFallback}
     html += tbl(t.kitHeaders, t.kitItems);
     html += `</div>`;
 
-    // Eras
-    html += `<div class="section"><h3 class="st">${t.erasTitle}</h3>`;
-    t.eras.forEach(era => {
-        let c = tbl([t.erasSlotHeader, t.erasItemHeader], era.items);
-        if (era.note) c += `<div class="nt">${era.note}</div>`;
-        html += acc(era.icon, era.name, null, c, era.open);
-    });
-    html += `</div>`;
-
     // Boss Rewards
     html += `<div class="section"><h3 class="st">${t.bossTitle}</h3>`;
     html += `<div class="nt">${t.devBossRewardIntro}</div>`;
@@ -186,7 +177,11 @@ ${t.hymnAudioFallback}
 
     // ===== DEEP LORE =====
     html += `<div class="lore-section">
+<div class="lore-toggle" onclick="this.parentElement.classList.toggle('open')">
 <h3 class="st g">${t.loreTitle}</h3>
+<span class="lore-toggle-hint">${t.loreToggleHint} <span class="lore-toggle-arrow">▼</span></span>
+</div>
+<div class="lore-content">
 
 <div class="lore-block">
 <div class="lore-chapter">
@@ -200,6 +195,37 @@ ${t.hymnAudioFallback}
 <p>${t.loreThorP4}</p>
 <p>${t.loreThorP5}</p>
 <div class="nt">${t.loreThorNote}</div>
+</div>
+</div>
+
+<div class="lore-divider">✦ ✦ ✦</div>
+
+<div class="lore-block">
+<div class="lore-chapter">
+<div class="lore-chapter-icon">${t.loreManaIcon}</div>
+<h4 class="lore-title">${t.loreManaTitle}</h4>
+</div>
+<div class="lore-text">
+<p>${t.loreManaP1}</p>
+<p>${t.loreManaP2}</p>
+<p>${t.loreManaP3}</p>
+
+<h5 class="lore-subtitle">${t.loreManaPhaseTitle}</h5>
+<div class="lore-steps">
+${t.loreManaPhases.map(([title, text]) => `<div class="lore-step"><span class="lore-step-num">${title.split(' ')[0]}</span><span class="lore-step-text"><strong>${title.split(' ').slice(1).join(' ')}</strong> ${text}</span></div>`).join('')}
+</div>
+
+<h5 class="lore-subtitle">${t.loreManaRebirthTitle}</h5>
+<p>${t.loreManaRebirthP1}</p>
+<p>${t.loreManaRebirthP2}</p>
+<p>${t.loreManaRebirthP3}</p>
+
+<div class="nt">${t.loreManaNote}</div>
+
+<div class="lore-quote-block">
+<div class="lore-quote-icon">🔥</div>
+<div class="lore-quote-text"><em>${t.loreManaQuote}</em><br><span class="lore-quote-attr">${t.loreManaQuoteAttr}</span></div>
+</div>
 </div>
 </div>
 
@@ -240,6 +266,7 @@ ${t.loreFateResSteps.map((step, i) => `<div class="lore-step"><span class="lore-
 </div>
 </div>
 
+</div>
 </div>`;
 
     // ===== CHALLENGE MODES =====

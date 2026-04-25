@@ -90,6 +90,14 @@ td{padding:5px 8px;font-size:.82rem;border-bottom:1px solid #ffffff08}
 
 /* Deep Lore Section */
 .lore-section{background:linear-gradient(135deg,#0a0a18,#12101e);border:1px solid var(--gold);border-radius:14px;padding:24px;margin-bottom:24px;box-shadow:0 0 30px #ffd70010}
+.lore-toggle{cursor:pointer;user-select:none;display:flex;flex-direction:column;align-items:center;gap:4px}
+.lore-toggle h3{margin:0}
+.lore-toggle-hint{font-family:'Inter',sans-serif;font-size:.72rem;color:var(--dim);letter-spacing:.5px;transition:color .2s}
+.lore-toggle:hover .lore-toggle-hint{color:var(--gold)}
+.lore-toggle-arrow{display:inline-block;transition:transform .3s;font-size:.7rem}
+.lore-section.open .lore-toggle-arrow{transform:rotate(180deg)}
+.lore-content{max-height:0;overflow:hidden;transition:max-height .5s ease}
+.lore-section.open .lore-content{max-height:50000px}
 .lore-block{margin-bottom:24px}
 .lore-chapter{display:flex;align-items:center;gap:12px;margin-bottom:16px}
 .lore-chapter-icon{font-size:2rem;filter:drop-shadow(0 0 10px #ffd70066);flex-shrink:0}
