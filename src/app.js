@@ -152,7 +152,7 @@ ${t.hymnAudioFallback}
 <div class="lbl">${t.devSkillsLabel}</div>
 <div class="cmd">raiseskill ElementalMagic 50\nraiseskill BloodMagic 50\nraiseskill Run 40\nraiseskill Sneak 30\nraiseskill Knives 30\nraiseskill Dodge 30</div>
 <div class="lbl">${t.devLootLabel}</div>
-<div class="cmd">spawn StaffFireball 1\nspawn StaffIceShards 1\nspawn StaffShield 1\nspawn KnifeFlint 1\nspawn YggdrasilPorridge 30\nspawn MagicallyStuffedShroom 30\nspawn SeekerAspic 20</div>
+<div class="cmd">spawn StaffFireball 1\nspawn StaffIceShards 1\nspawn StaffShield 1\nspawn KnifeFlint 1\nspawn HelmetDverger 1\nspawn ArmorLeatherChest 1\nspawn ArmorLeatherLegs 1\nspawn HelmetLeather 1\nspawn CapeDeerHide 1\nspawn YggdrasilPorridge 30\nspawn MagicallyStuffedShroom 30\nspawn SeekerAspic 20\nspawn Honey 50\nspawn CookedMeat 50\nspawn Wood 200\nspawn SurtlingCore 15</div>
 <div class="nt">${t.devNote}</div>
 </div>`;
 

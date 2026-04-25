@@ -32,8 +32,8 @@ export default {
 
   // Backstory
   backstoryTitle: '📖 Banished from Asgard',
-  backstoryP1: "Sigrid Ash-Eyed was among the most powerful völvas of Asgard — a seeress who read eitr currents as easily as runes on stone. When Odin learned that the Forsaken — ancient beings banished by the gods into the tenth world — were growing stronger and threatening to break Valheim's chains, he called a council. Warriors had been sent to Valheim by the hundreds: berserkers, spearmen, swordsmen — all perished, unable to defeat the seven Forsaken. Odin didn't need another sword. He needed magic.",
-  backstoryP2: 'He came to Sigrid on the night of the winter solstice. <em>"Valheim devours warriors," said the Allfather, "but none of them wielded eitr. You will go there, völva. I will give you staves forged in the flames of Muspelheim and the cold of Niflheim, and a reserve of mana — but it is finite. When the eitr runs dry, you must survive by blade and cunning until you find a source of power within Valheim itself."</em> Sigrid never asked for this fate — but a völva does not refuse Odin. A Valkyrie seized her and hurled her into the tenth world, where stones remember the names of the fallen, and seven Forsaken await the one who will finally bring them death.',
+  backstoryP1: "Sigrid Ash-Eyed was among the most powerful völvas of Asgard — a seeress who read eitr currents as easily as runes on stone. When Odin learned that the Forsaken — ancient beings banished by the gods into the tenth world — were growing stronger and threatening to break Valheim's chains, he called a council. Warriors had been sent to Valheim by the hundreds: berserkers, spearmen, swordsmen — all perished, unable to defeat the five Forsaken and the other horrors of the tenth world. Odin didn't need another sword. He needed magic.",
+  backstoryP2: 'He came to Sigrid on the night of the winter solstice. <em>"Valheim devours warriors," said the Allfather, "but none of them wielded eitr. You will go there, völva. I will give you staves forged in the flames of Muspelheim and the cold of Niflheim, and a reserve of mana — but it is finite. When the eitr runs dry, you must survive by blade and cunning until you find a source of power within Valheim itself."</em> Sigrid never asked for this fate — but a völva does not refuse Odin. A Valkyrie seized her and hurled her into the tenth world, where stones remember the names of the fallen, and the Forsaken and spawn of Valheim await the one who will finally bring them death.',
   backstoryNote: "🐦 Huginn, Odin's raven, watches Sigrid from the shadows. Every slain boss is a report to the Allfather. Every gift after victory is not mercy — it's an investment.",
 
   // Rules
@@ -93,7 +93,7 @@ export default {
       icon: '🌲', name: 'Bronze Age → The Elder',
       items: [
         ['Primary', 'Staff of embers'], ['Secondary staff', 'Staff of frost'],
-        ['Melee', 'Bronze knife'], ['Armor', 'Troll leather armor set (stealth cloak)'],
+        ['Melee', 'Copper knife'], ['Armor', 'Troll leather armor set (stealth cloak)'],
         ['Food', 'Yggdrasil porridge + Magically stuffed shroom + Queens jam'],
       ],
       note: 'Troll armor — lightweight with a sneak bonus. Perfect for a mage: hide, creep, backstab.',
@@ -130,7 +130,7 @@ export default {
       items: [
         ['Primary', 'Staff of embers (upgraded!)'], ['Secondary', 'Staff of frost (upgraded!)'],
         ['Third', 'Dead raiser (skeleton summon!)'], ['Defense', 'Staff of protection (upgraded!)'],
-        ['Melee', 'Seeker shell knife'], ['Armor', 'Eitr-weave armor set'],
+        ['Melee', 'Black metal knife (max lvl)'], ['Armor', 'Eitr-weave armor set'],
         ['Cape', 'Feather cape (wings of the völva)'], ['Food', 'Yggdrasil porridge + Magically stuffed shroom + Seeker aspic'],
       ],
       note: 'MANA IS BACK. Craft your own eitr food. Infinite mana. Fire, ice, skeletons — FULL POWER.',
@@ -140,7 +140,7 @@ export default {
       items: [
         ['Primary', 'Staff of embers (max upgrade)'], ['Secondary', 'Staff of frost (max upgrade)'],
         ['Third', 'Dead raiser (upgraded!)'], ['Defense', 'Staff of protection (max upgrade)'],
-        ['Melee', 'Flametal knife'], ['Armor', 'Eitr-weave armor set (max upgrade)'],
+        ['Melee', 'Black metal knife (max lvl)'], ['Armor', 'Eitr-weave armor set (max upgrade)'],
         ['Cape', 'Feather cape / Asksvin cape'], ['Food', 'Yggdrasil porridge + Magically stuffed shroom + Roasted crust'],
       ],
       note: 'PEAK MAGE POWER. Flametal — the pinnacle of crafting. All staves maxed out.',
@@ -162,32 +162,32 @@ export default {
     {
       icon: '🌳', name: 'The Elder', sub: 'Boss #2',
       quote: 'The ancient spirit crumbled to ash. The swamps reveal their secrets.',
-      loot: [['Magically stuffed shroom', '15'], ['Iron ingots', '60'], ['Root armor set (full)', '1'], ['Chitin', '30']],
+      loot: [['Magically stuffed shroom', '15'], ['Iron ingots', '30'], ['Chitin', '30']],
       bonus: '<strong>Abyssal razor</strong> (lvl 3) — a blade from the depths of the abyss',
     },
     {
       icon: '💧', name: 'Bonemass', sub: 'Boss #3',
       quote: 'The rot was frozen by the frost staff. The mountains await.',
-      loot: [['Seeker aspic', '10'], ['Silver ingots', '150'], ['Fenris hair', '15'], ['Wolf pelts', '20'], ['Frost resistance mead', '50']],
-      bonus: "<strong>Fenris armor set</strong> (full, lvl 1) — the dark mage's armor",
+      loot: [['Seeker aspic', '10'], ['Silver ingots', '50'], ['Wolf pelts', '20'], ['Root armor set (full)', '1']],
+      bonus: "<strong>Root armor</strong> — the völva's first magical armor",
     },
     {
       icon: '🐉', name: 'Moder', sub: 'Boss #4',
       quote: 'The dragon fell under a hail of ice shards.',
-      loot: [['Black metal ingots', '80'], ['Linen thread', '80'], ['Barley flour', '60'], ['Needle', '40']],
-      bonus: '<strong>Metal teleportation</strong> + 2 more portals (5 total)',
+      loot: [['Black metal ingots', '60'], ['Linen thread', '60'], ['Barley flour', '40'], ['Fenris hair', '20'], ['Wolf pelts', '15']],
+      bonus: '<strong>Fenris armor set</strong> (full, lvl 1) — the dark mage\'s armor + <strong>metal teleportation</strong> + 2 more portals (5 total)',
     },
     {
       icon: '👑', name: 'Yagluth — THE GREAT RESTORATION', sub: 'Boss #5',
       quote: "The fifth Forsaken has fallen. Odin restores the völva's full power.",
-      loot: [['Refined eitr', '50'], ['Sap', '50'], ['Black cores', '15'], ['Soft tissue', '40'], ['Royal jelly', '30'], ['Dead raiser (staff)', '1'], ['Feather cape', '1'], ['Eitr-weave armor set', '1']],
-      bonus: '<strong>Unlimited portals</strong> + eitr food crafting = infinite mana + <strong>Eitr-weave armor</strong>',
+      loot: [['Refined eitr', '30'], ['Sap', '30'], ['Black cores', '10'], ['Soft tissue', '20'], ['Royal jelly', '15']],
+      bonus: '<strong>Unlimited portals</strong> + eitr food crafting = infinite mana. The path to Mistlands is open!',
     },
     {
       icon: '👸', name: 'The Queen', sub: 'Boss #6',
       quote: 'The Queen has fallen. The mists of Mistlands have cleared. Ash lies ahead.',
-      loot: [['Flametal ore', '60'], ['Ashwood', '80'], ['Morgen sinew', '40'], ['Asksvin hide', '20']],
-      bonus: '<strong>Flametal knife</strong> — the path to Ashlands is open',
+      loot: [['Flametal ore', '30'], ['Ashwood', '40'], ['Morgen sinew', '20'], ['Asksvin hide', '10']],
+      bonus: 'The path to Ashlands is open — the flame of Muspelheim awaits',
     },
     {
       icon: '🌋', name: 'Fader — LORD OF ASH', sub: 'Boss #7',
@@ -219,7 +219,7 @@ export default {
   loreFateMechanicP2: "But the Thread of Fate is fragile. At the moment of exile, it can withstand only <strong>one death</strong> — one resurrection. If Sigrid falls, the Thread will pull her soul back from the darkness and restore her body from Yggdrasil's eitr. But afterward, the Thread will fray and snap. The second death would be final.",
 
   loreFateWhyTitle: '⚔️ Why +1 Life per Boss?',
-  loreFateWhyP1: "Each Forsaken is an ancient being banished by the gods into Valheim and bound in chains. When Sigrid slays a Forsaken, something crucial happens: <strong>the chains that held the boss release a massive surge of eitr</strong>. This eitr flows through Yggdrasil — and Odin, seated on his throne Hlidskjalf, intercepts a portion of that energy.",
+  loreFateWhyP1: "Each boss of Valheim — whether a Forsaken, the Seeker Queen, or the Lord of Ash — is a mighty being bound by the power of the tenth world. When Sigrid slays such a boss, something crucial happens: <strong>the creature's death releases a massive surge of eitr</strong>. This eitr flows through Yggdrasil — and Odin, seated on his throne Hlidskjalf, intercepts a portion of that energy.",
   loreFateWhyP2: "The Allfather uses the captured eitr to <strong>weave another loop into Sigrid's Thread of Fate</strong> — an additional anchor capable of withstanding one more death. Each boss killed = another loop = another life.",
 
   loreFateTableHeaders: ['Boss', 'Lives After Victory', 'Lore'],
@@ -231,7 +231,7 @@ export default {
     ['🐉 Moder', '5 lives', "Dragon eitr — the mightiest loop"],
     ['👑 Yagluth', '6 lives', "Yagluth's flame tempers the Thread"],
     ['👸 The Queen', '7 lives', 'The Thread is infused with Mistlands power'],
-    ['🌋 Fader', '—', 'All Forsaken have fallen. Sigrid is free.'],
+    ['🌋 Fader', '—', 'All bosses of Valheim have fallen. Sigrid is free.'],
   ],
 
   loreFateResTitle: '🪶 How Resurrection Works',
