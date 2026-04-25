@@ -1,5 +1,17 @@
-03-mage2.md
-meta.md
+# Dependencies
+node_modules/
+
+# Build output
+eitrway/
+
+# Vite cache
+.vite/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Dev/meta files
+meta
 AGENTS.md
-docker-compose.yml
-deploy.sh
+.codeassistantignore
