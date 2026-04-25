@@ -109,3 +109,9 @@ td{padding:5px 8px;font-size:.82rem;border-bottom:1px solid #ffffff08}
 .lore-quote-text{font-size:.82rem;line-height:1.7;color:var(--dim)}
 .lore-quote-text em{color:var(--dim)}
 .lore-quote-attr{display:block;margin-top:6px;font-size:.74rem;color:var(--gold);font-style:normal;font-weight:600}
+
+/* Language Switcher */
+.lang-switcher{position:fixed;top:16px;right:16px;z-index:100;display:flex;gap:4px;background:#0a0a1acc;backdrop-filter:blur(8px);border:1px solid var(--brd);border-radius:8px;padding:4px}
+.lang-btn{background:transparent;border:1px solid transparent;color:var(--dim);font-family:'Inter',sans-serif;font-size:.78rem;font-weight:600;padding:4px 10px;border-radius:6px;cursor:pointer;transition:all .2s;letter-spacing:.5px}
+.lang-btn:hover{color:var(--txt);background:#ffffff0a}
+.lang-btn.active{color:var(--gold);background:#ffd70012;border-color:#ffd70033}
