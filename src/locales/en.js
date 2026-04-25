@@ -41,10 +41,11 @@ export default {
   rules: [
     [1, '✅ Staff is your primary weapon', 'From the very start. Mages cast, not swing'],
     [1, '✅ Knives allowed', 'The only permitted melee weapon'],
+    [1, '✅ Staff of the Troll allowed', 'Summoning is magic too'],
     [1, '✅ Light armor only', 'Leather, troll, root, Fenris, padded, eitr-weave'],
     [2, '💀 1 life + 1 per boss kill', 'Start with 1 life. Each boss killed = +1 extra life'],
-    [0, '❌ No swords / spears', 'Swords, spears, axes, sledgehammers — all banned'],
-    [0, '❌ No bows', "You have a staff — why would you need a bow?"],
+    [0, '❌ No swords / spears / atgeirs', 'Swords, spears, atgeirs, axes, sledgehammers — all banned'],
+    [0, '❌ No bows or crossbows', "You have a staff — why would you need a bow or crossbow?"],
     [0, '❌ No heavy armor', 'Bronze, iron armor, etc. — forbidden'],
     [0, '❌ No shields', "A mage doesn't hide behind a shield"],
   ],
